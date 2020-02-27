@@ -1,0 +1,200 @@
+/* 
+  This was made 100% with HTML and CSS. And the colab from Google and Alan(thanks Alan)
+*/
+
+#id h1 {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: rgb(10, 12, 29, 1);
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: hidden;
+}
+
+header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(20, 53, 108, 0.9);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+#div-header {
+  display: inline-flex;
+  width: 100vw;
+}
+
+#div-header h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  text-align: start;
+}
+
+#div-header nav {
+  width: 122%;
+  text-align: end;
+}
+
+#div-welcome {
+  text-align: center;
+}
+
+.section {
+  padding: 12vh;
+  text-align: center;
+  font-size: 17px;
+}
+
+.home-page img {
+  width: 100vw;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.link-icon {
+  text-decoration: none;
+}
+
+#experience {
+  display: block;
+}
+
+p {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+p .little{
+  font-size: 9px;
+}
+
+table {
+  width: 100%;
+  height: 35vh;
+  border-collapse: collapse;
+}
+
+#experience table td,
+th {
+  border-bottom: solid rgba(136, 136, 136, 0.5);
+}
+
+#experience table .table-header {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 17px;
+  color: gray;
+}
+
+#experience table .table-data {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 15px;
+  color: #fff;
+}
+
+#skills-list table .stack {
+  color: gray;
+  width: 20%;
+  border-bottom: solid rgba(136, 136, 136, 0.1);
+}
+
+#skills-list table td span {
+  color: #fff;
+}
+
+.more-info {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  font-size: 20px;
+}
+
+.more-info a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.more-info a::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  border-bottom: solid rgba(136, 136, 136, 0.5);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.more-info a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+h3{
+  color: #fff;
+  width: 100%;
+  border-bottom: solid rgba(136, 136, 136, 0.1);
+  text-transform: uppercase;
+}
+
+footer {
+  color: rgba(136, 136, 136, 0.7);
+}
+/* Mobile */
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
